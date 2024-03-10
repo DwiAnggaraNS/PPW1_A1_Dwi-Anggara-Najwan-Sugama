@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Lowongan Kerja Perusahaan IT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container">
+        <header>Form Registrasi Lamaran Pekerjaan Perusahaan IT</header>
+        <hr>
+        <form class="form" method="post" action="#dummy" target="_top">
+            <h3><big>Data Diri</big></h3>
+            <section class="input-box">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" name="nama" id="nama" placeholder="Masukkan nama lengkap anda" required>
+            </section>
+            
+            <section class="input-box">
+                <label for="email">Alamat Email</label>
+                <input type="email" name="email" id="email" placeholder="Masukkan alamat email anda" required>
+            </section>
+            
+            <section class="column">
+                <section class="input-box">
+                    <label for="Telefon">Nomor Telefon</label>
+                    <input type="tel" nama="Telefon" id="Telefon" pattern="\d{4} \d{4} \d{4}" placeholder="Tuliskan dalam format: 08XX XXXX XXXX" required>
+                </section>
+                
+                <section class="input-box">
+                    <label for="tanggal_lahir">Tanggal Lahir</label>
+                    <input type="date" nama="tanggal_lahir" id="tanggal_lahir" placeholder="Masukkan tanggal lahir" required>
+                </section>
+            </section>
+            
+            <section class="gender-box">                
+                <h3>Jenis Kelamin</h3>
+                <section class="gender">
+                    <input type="radio" id="gender" name="gender" value="laki-laki">
+                    <label for="gender">Laki-laki</label><br>
+                    <input type="radio" id="gender" name="gender" value="perempuan">
+                    <label for="gender">Perempuan</label><br>
+                </section>
+            </section>
+            
+            <br><section class="input-box">
+                <label for="alamat">Alamat Domisili</label>
+                <input type="text" name="alamat" id="alamat" placeholder="Masukkan alamat domisili anda" required>
+            </section>
+            <br>
+            <hr>
+            <h3><big>Data Pendidikan</big></h3>
+            <label for="tingkat pendidikan">Tingkat Pendidikan</label>
+            <section class="select-box">
+                <select name="tingkat pendidikan" id="tingkat pendidikan">
+                    <option value="SMA">SMA</option>
+                    <option value="D3">D3</option>
+                    <option value="S1/D4">S1/D4</option>
+                    <option value="S2">S2</option>
+                    <option value="S3">S3</option>
+                </select>
+            </section>
+            <section class="input-box">
+                <label for="univ">Nama Universitas</label>
+                <input type="text" name="univ" id="univ" placeholder="Masukkan nama Universitas anda berkuliah" required>
+            </section>
+            <section class="input-box">
+                <label for="tahun lulus">Tahun Lulus</label>
+                <input type="number" name="tahun lulus" id="tahun lulus" placeholder="Masukkan tahun anda lulus kuliah" required>
+            </section>
+            <br>
+            <hr>
+            <h3><big>Data Lamaran Pekerjaan</big></h3>
+            <label for="pekerjaan">Posisi Pekerjaan yang Dilamar</label>
+            <section class="select-box">
+                <select name="posisi" id="posisi">
+                    <optgroup label="Bidang Software">
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="Mobile App Developer">Mobile App Developer</option>
+                        <option value="DevOps Engineer">DevOps Engineer</option>
+                        <option value="UI/UX Designer">UI/UX Designer</option>
+                        <option value="Quality Assurance (QA) Engineer">Quality Assurance (QA) Engineer</option>
+                    </optgroup>
+                    <optgroup label="Bidang Data">
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="Data Scientist">Data Scientist</option>
+                        <option value="Data Engineer">Data Engineer</option>
+                        <option value="Business Intelligence (BI) Developer">Business Intelligence (BI) Developer</option>
+                    </optgroup>
+                    <optgroup label="Bidang Artificial Intelligence">
+                        <option value="AI Engineer">AI Engineer</option>
+                        <option value="Natural Language Processing (NLP) Engineer">Natural Language Processing (NLP) Engineert</option>
+                        <option value="Computer Vision Engineer">Computer Vision Engineer</option>
+                        <option value="Deep Learning Engineer">Deep Learning Engineer</option>
+                    </optgroup>
+                </select>
+            </section>
+            <br>
+            <label for="CV">CV atau Resume</label>
+            <section class="file-box">
+                <input type="file" name="CV" id="CV" required>
+            </section>
+            <br><label>Bahasa Pemograman yang Dikuasai</label>
+            <section class="file-box">
+                <input type="checkbox" id="lang1" name="lang1" value="Python">
+                <label for="lang1">Python</label><br>
+                <input type="checkbox" id="lang2" name="lang2" value="Java">
+                <label for="lang2">Java</label><br>
+                <input type="checkbox" id="lang3" name="lang3" value="Java Sript">
+                <label for="lang3">Java Sript</label>       
+                <br><input type="checkbox" id="lang4" name="lang4" value="Flutter">
+                <label for="lang4">Flutter</label>    
+                <br><input type="checkbox" id="lang5" name="lang5" value="Golang">
+                <label for="lang5">Golang</label>   
+            </section>
+            <br><label for="pengalaman">Ceritakan Pengalaman Proyek Terbaik yang Pernah Anda Kerjakan</label>
+            <section class="input-box">
+                <textarea name="pengalaman" id="pengalaman" rows="10" cols="75" placeholder="Proyek terbaik yang pernah saya kerjakan yaitu ..." required style="resize: none;"></textarea>
+            </section>
+            <br>
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+</html>

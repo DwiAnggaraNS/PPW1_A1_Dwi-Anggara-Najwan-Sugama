@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Form</title>
+</head>
+<body>
+    <form method="post" action="#dummy" target="_top">
+        <p>Jumlah:</p>
+<output for="jumlah"></output>
+        <script>
+            var harga = 10000;
+            var jumlah = 2;
+            
+            document.getElementById("jumlah").innerHTML = harga * jumlah;
+          </script>
+
+        <label for="name"><b>Name: </b></label><br>
+        <input type="text" id="name" name="name" size="20" autofocus required><br>
+        <br><label for="password"><b>Password: </b> </label><br>
+        <input type="password" id="password" name="password" required><br>
+        
+        <p><b>Favorite Programming Language:</b></p>
+        <input type="checkbox" id="lang1" name="lang1" value="Python">
+        <label for="lang1">Python</label><br>
+        <input type="checkbox" id="lang2" name="lang2" value="Java">
+        <label for="lang2">Java</label><br>
+        <input type="checkbox" id="lang3" name="lang3" value="Java Sript">
+        <label for="lang3">Java Sript</label>       
+        <br><input type="checkbox" id="lang4" name="lang3" value="Flutter">
+        <label for="lang4">Flutter</label>       
+        
+        <br><select>
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+
+        <br><button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        
+        <br>
+        <label for="tanggal"><b>Tanggal: </b></label><br>
+        <input type="date" id="tanggal" name="tanggal">
+        
+        <br>
+        <label for="file"><b>File: </b></label><br>
+        <input type="file" id="file">
+        
+        <br>
+        <label for="img"><b>Img: </b></label><br>
+        <input type="image" id="img" name="img">
+        
+        <br>
+        <label for="jangkauan"><b>jangkauan: </b></label><br>
+        <input type="range">
+        
+        <br>
+        <label for="warna"><b>Warna favorit: </b></label><br>
+        <input type="color" id="warna" name="warna">
+        
+        <br>
+        <label for="cari"><b>Cari: </b></label><br>
+        <input type="search" id="cari" name="cari">
+        
+        <br>
+        <label for="nomor"><b>Nomor: </b></label><br>
+        <input type="number" id="nomor" name="nomor">
+
+
+        <p><b>Choose your favorite Web language:</b></p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    
+        <p><b>Ceritakan Pengalaman Anda:</b></p>
+        <textarea name="message" rows="10" cols="30">Pernah bekerja di ...
+        </textarea><br>
+
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <br> <input type="submit"><br>
+       </form>
+
+    <svg width="200" height="200">
+     <rect width="200" height="200"
+    style="fill:rgb(19, 117, 169);stroke-width:10;stroke:black"/>
+    <circle cx="50" cy="50" r="40" stroke="red" stroke-width="2"
+    fill="orange" />
+    </svg><br>
+    
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.lineTo(100,200);
+        ctx.stroke();
+
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World!", 200, 150);
+    </script>
+    <form>
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </fieldset>
+    </form>
+    <form>
+        <label for="negara">Negara:</label>
+        <input type="text" id="negara" name="negara" list="negara-list">
+        <datalist id="negara-list">
+          <option value="Indonesia">Indonesia</option>
+          <option value="Malaysia">Malaysia</option>
+          <option value="Malaysia">Malaysia</option>
+          <option value="Singapura">Singapura</option>
+        </datalist>
+
+    </form>
+</body>
+</html>
