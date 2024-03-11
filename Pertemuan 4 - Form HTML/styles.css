@@ -68,13 +68,6 @@ body {
     margin-top: 20px;
 }
 
-.gender-box h3{
-    color: #333;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 8px;
-}
-
 .form .gender{
     display: flex;
     column-gap: 15px;
