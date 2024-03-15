@@ -1,0 +1,9 @@
+body{
+    background-color: aqua;
+}
+h1 {
+    color: aqua;
+    font-weight: 200;
+    background-color: black;
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+/* Bagian I */
+body {
+  color: #fff;
+  margin: 0
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  background-color: navy;
+  margin: 0;
+}
+
+.header h1{
+  margin: 0;
+}
+
+/* Bagian II */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  top: 0;
+  position: sticky;
+  margin: 0; 
+}
+
+
+.navbar a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
+/* Bagian III */
+.container {
+  display: flex;
+  margin: 0;
+}
+
+.main{
+  width: 50%;
+  float: left;
+  background-color: #444;
+}
+.aside{
+  width: 50%;
+  background-color: grey;
+  float: right;
+}
+
+.isi_main{
+  padding: 10px;
+  background-color: rgb(119, 56, 56);
+}
+
+.isi_main article{
+  margin: 10px;
+  align-self: center;
+  color: #444;
+  background-color: white;
+}
+
+/* Bagian IV */
+.footer{
+  background-color: navy;
+  margin: 0;
+  text-align: center;
+  padding: 5px;
+}

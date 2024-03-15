@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS</title>
+    <style>
+        body {
+            background: url(dummy.jpg) no-repeat;
+            background-size: cover;
+            background-position:  bottom;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        p {
+            font-size: 20px;
+            color: black;
+        }
+
+        .navbar { overflow: hidden; background-color: #333; }
+        .navbar a { float: left; font-size: 16px; color: white; text-align: center; padding: 14px
+            16px; text-decoration: none; }
+        .dropdown { float: left; overflow: hidden; }
+        .dropdown .dropbtn { font-size: 16px; border: none; outline: none; color: white; padding: 14px 16px; border-color: inherit; font-family: inherit; margin: 0; background-color: inherit;}
+        .navbar a:hover, .dropdown:hover .dropbtn { background-color: blue; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width:160px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
+        .dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none;
+            display: block; text-align: left; }
+        .dropdown-content a:hover { background-color: #ddd; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        p.solid {border-style: solid;}
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+        .margin-all {
+            border: 1px solid violet;
+            margin: 10px 5px 2px 20px;
+        }
+        .margin-each {
+            border: 1px solid black;
+            margin-top: 5px;
+            margin-right: 40px;
+            margin-bottom: 15px;
+            margin-left: 25px;
+        }
+        .p {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .wide {
+            width: 3000px;
+        }
+        .narrow {
+            width: 50px;
+        }
+        .p {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .high {
+            height: 300px;
+        }
+        .low {
+            height: 50px;
+        }
+ 
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div>
+       </div>
+    </div>       
+    <p>Ini teks yang berwarna brown</p>
+
+    <p style="background-color:beige;">Halo Halo... latar belakang teks ini berwarna hitam</p>
+
+    <p>Sekarang, background halaman ini memakai gambar loh</p>
+
+    <h1>Jenis jenis Border CSS </h1>
+    <p class="solid">Border solid = lurus</p>
+    <p class="dotted">Border dotted = titik titik</p>
+    <p class="dashed">Border dashed = garis terpisah</p>
+    <p class="double">Border double = ada dua border seperti kotak.</p>
+    <p class="groove">Border groove </p>
+    <p class="ridge">Border ridge</p>
+    <p class="inset">Border Inset.</p>
+    <p class="outset">Border Outset.</p>
+    <p class="none">Tanpa Border.</p>
+    <p class="hidden">Border tesembunyi.</p>
+    <p class="mix">Border campuran.</p>
+   
+    <p class="margin-all">Aku adalah tag p dengan margin </p>
+    <p class="margin-each">Aku adalah tag p dengan margin </p>
+    <p class="p">Aku adalah tag p tanpa lebar </p>
+    <p class="p wide">Aku adalah tag p wide </p>
+    <p class="p narrow"> Aku adalah tag p narrow </p>
+
+    <p class="p">Aku adalah tag p tanpa lebar </p>
+    <p class="p high">Aku adalah tag p wide </p>
+    <p class="p low"> Aku adalah tag p narrow </p>
+
+    <p style="text-decoration:overline;"> Saya overline </p>
+    <p style="text-decoration:line-through;"> Saya line-through </p>
+    <p style="text-decoration:underline;"> Saya underline </p>
+    <p style=" text-decoration:line-through; text-decoration-color:
+   yellow; "> Saya line-through </p>
+    <p style=" text-decoration:line-through; text-decoration-color:
+   yellow; text-decoration-style: wavy; "> Saya
+    line-through wavy </p>
+    <p style=" text-decoration:line-through; text-decoration-color: aqua;
+   text-decoration-style: dotted; "> Saya
+    line-through dotted </p>
+    <p style="text-transform: uppercase;"> Text dengan uppercase </p>
+    <p style="text-transform: lowercase;"> Text dengan lowercase </p>
+    <p style="text-transform: capitalize;"> Text dengan Capitalize </p>
+    
+</body>
+</html>
