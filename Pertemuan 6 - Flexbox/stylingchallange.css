@@ -64,9 +64,6 @@ body{
         margin-top: 30px;
     }
 
-    p{
-        font-size: 13px;
-    }
 }
 
 .box .column2 article{
@@ -120,8 +117,3 @@ body{
     background-color: hsl(210, 46%, 95%);
     border-radius: 100%;
 }
-
-
-
-
-
