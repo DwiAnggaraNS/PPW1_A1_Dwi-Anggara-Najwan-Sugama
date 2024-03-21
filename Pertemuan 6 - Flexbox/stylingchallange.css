@@ -2,9 +2,6 @@ body{
     background-color: hsl(210, 46%, 95%);
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-self: center;
 }
 
 .container{
