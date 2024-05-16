@@ -1,0 +1,3 @@
+function salam(){
+    alert("Halo!")
+}
