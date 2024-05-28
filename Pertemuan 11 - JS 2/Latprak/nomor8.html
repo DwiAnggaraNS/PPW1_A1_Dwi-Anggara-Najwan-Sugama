@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Jendela dialog alert()
+        alert("Selamat datang di web ini!")
+        
+        // Jendela dialog confirm()
+        var yakin = confirm("Apakah kamu yakin akan mengunjungi instagram?")
+        if (yakin) {
+                window.location = "https://www.instagram.com";
+        } else {
+                document.write("Baiklah, tetap di sini saja ya :)");
+        }
+        
+        // Jendela dialog prompt()
+        var nama = prompt("Siapa nama kamu?", ""); 
+        document.write("<p>Hello "+ nama +"</p>");
+    </script>
+</body>
+</html>

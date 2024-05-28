@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS</title>
+</head>
+<body>
+    <h1>Belajar JS</h1>
+    <script>
+        var iniPakeVar = "Ini pake kata kunci var";
+        let iniPakeLet = "Ini pake kata kunci let";
+        const ini_pake_const = "Ini pake kata kunci const";
+        iniTidakPakeKataKunci = "Ini tidak pake kata kunci"; // d menjadi variabel global
+        
+        console.log(iniPakeVar); // Ini pake kata kunci var
+        console.log(iniPakeLet); // Ini pake kata kunci let
+        console.log(ini_pake_const); // Ini pake kata kunci const
+        console.log(iniTidakPakeKataKunci); // Ini tidak pake kata kunci
+        
+        iniPakeVar = "mengganti isi pada variabel yang pake kata kunci var"; 
+        iniPakeLet = "mengganti isi pada variabel yang pake kata kunci let"; 
+        
+        // Mencoba mengubah nilai konstanta akan menghasilkan error
+        try {
+            ini_pake_const = "mengganti isi pada variabel yang pake kata kunci const"; 
+        } catch (error) {
+                console.error("Error saat mengubah nilai const:", error);
+            }
+            
+        iniTidakPakeKataKunci = "mengganti isi pada variabel yang tidak pake kata kunci"; 
+        
+        console.log(iniPakeVar); // mengganti isi pada variabel yang pake kata kunci var
+        console.log(iniPakeLet); // mengganti isi pada variabel yang pake kata kunci let
+        console.log(ini_pake_const); // Ini pake kata kunci const (tidak berubah)
+        console.log(iniTidakPakeKataKunci); // mengganti isi pada variabel yang tidak pake kata kunci
+    </script>
+</body>
+</html>

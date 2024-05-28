@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Operator Aritmatika
+        console.log("Operator aritmatika diterapkan pada tipe data integer")
+        console.log("Berikut contoh penggunaan operator aritmatika: ")
+        var x = 5;
+        var y = 4;
+        console.log("nilai x = "+x)
+        console.log("nilai y = "+y)
+        var z = x + y;
+        console.log("nilai x+y = "+z)
+        
+        console.log("Operator aritmatika penjumlahan yang diterapkan pada tipe data string akan berperan menjadi operator kontentasi (penggabungan)")
+        console.log("Berikut contoh penggunaan operator kontentasi: ")
+        var a = "Hello ";
+        var b = "world!";
+        console.log("isi variabel a = "+a)
+        console.log("isi variabel b = "+b)
+        var c = a + b;
+        console.log("hasil penggabungan a dan b = "+c)
+
+        // Operator Penugasan
+        document.write("Mula-mula nilai score...<br>");
+        // pengisian nilai
+        var score = 100;
+        document.write("score = "+ score + "<br/>");
+        score += 5;
+        // pengisian dan menjumlahan dengan 5 document.write("score = +score + "<br/>");
+        // pengisian dan pengurangan dengan 2
+        score -= 2;
+        document.write("score = "+ score + "<br/>");
+        // pengisian dan pembagian dengan 4
+        score /= 4;
+        document.write("score = "+ score + "<br/>");
+        // pengisian dan pemangkatan dengan 2
+        score **= 2;
+        document.write("score = "+ score + "<br/>");
+        // pengisian dan modulo dengan 3;
+        score %= 3;
+        document.write("score = "+ score + "<br/>");
+
+        // Operator Perbandingan
+        var aku = 20;
+        var kamu = 19;
+
+        // sama dengan
+        var hasil = aku == kamu; 
+        document.write(`${aku} == ${kamu} = ${hasil}<br/>`);
+        
+        // lebih besar
+        hasil = aku > kamu; 
+        document.write(`${aku} > ${kamu} = ${hasil}<br/>`);
+        
+        // lebih besar samadengan
+        hasil = aku >= kamu; 
+        document.write(`${aku} >= ${kamu} = ${hasil}<br/>`);
+        
+        // lebih kecil
+        hasil = aku < kamu; 
+        document.write(`${aku} < ${kamu} = ${hasil}<br/>`);
+        
+        // lebih kecil samadengan
+        hasil = aku <= kamu;
+        document.write(`${aku} <= ${kamu} = ${hasil}<br/>`);
+        
+        // tidak samadengan
+        hasil = aku != kamu;
+        document.write(`${aku} != ${kamu} = ${hasil}<br/>`);
+
+        // Menambahkan penjelasan perbedaan == dengan === dan != dengan !==
+
+        var nilai1 = "20";
+        var nilai2 = 20;
+
+        // == dan ===
+        var samaDengan = (nilai1 == nilai2); // true, karena koersi tipe
+        var samaDenganStrict = (nilai1 === nilai2); // false, karena tipe data berbeda
+
+        document.write(`<br/>Perbandingan == dan ===:<br/>`);
+        document.write(`"${nilai1}" == ${nilai2} = ${samaDengan}<br/>`);
+        document.write(`"${nilai1}" === ${nilai2} = ${samaDenganStrict}<br/>`);
+
+        // != dan !==
+        var tidakSamaDengan = (nilai1 != nilai2); // false, karena koersi tipe
+        var tidakSamaDenganStrict = (nilai1 !== nilai2); // true, karena tipe data berbeda
+
+        document.write(`<br/>Perbandingan != dan !==:<br/>`);
+        document.write(`"${nilai1}" != ${nilai2} = ${tidakSamaDengan}<br/>`);
+        document.write(`"${nilai1}" !== ${nilai2} = ${tidakSamaDenganStrict}<br/>`);
+
+        // Operator Logika
+        var aku = 20;
+        var kamu = 19;
+
+        var benar = aku > kamu;
+        var salah = aku < kamu;
+
+        // operator && (and)
+        var hasil = benar && salah;
+        document.write(`${benar} && ${salah} = ${hasil}<br/>`);
+
+        // operator || (or)
+        hasil = benar || salah;
+        document.write(`${benar} || ${salah} = ${hasil}<br/>`);
+
+        // operator ! (not)
+        hasil = !benar;
+        document.write(`!${benar} = ${hasil}<br/>`);
+
+        // Operator Bitwise
+        var x = 4;
+        var y = 3;
+
+        // operator bitwise and
+        var hasil = x & y;
+        document.write(`${x} & ${y} = ${hasil}<br/>`);
+
+        // operator bitwise or
+        hasil = x | y;
+        document.write(`${x} | ${y} = ${hasil}<br/>`);
+
+        // operator bitwise xor
+        hasil = x ^ y;
+        document.write(`${x} ^ ${y} = ${hasil}<br/>`);
+
+        // operator negasi
+        hasil = ~x;
+        document.write(`~${x} = ${hasil}<br/>`);
+
+        // operator bitwise right shift
+        hasil = x >> y;
+        document.write(`${x} >> ${y} = ${hasil}<br/>`);
+
+        // operator bitwise left shift
+        hasil = x << y;
+        document.write(`${x} << ${y} = ${hasil}<br/>`);
+
+        // operator bitwise right shift (unsigned)
+        hasil = x >>> y;
+        document.write(`${x} >>> ${y} = ${hasil}<br/>`);
+    </script>
+</body>
+</html>

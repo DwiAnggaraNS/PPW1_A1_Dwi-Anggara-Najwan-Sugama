@@ -1,0 +1,1 @@
+print("Selamat datang di kelas saya. Silahkan langsung baca materi yang sudah saya share di grup WA. SAYA MAU LANJUT NONTON YOUTUBE DULU".upper())
